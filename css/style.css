@@ -1,3 +1,8 @@
+:root{
+    --btn-color: rgb(143, 165, 254);
+    font-size: 62.5%;
+  }
+
 body{
     font-family: 'Sniglet', sans-serif;
     
@@ -13,39 +18,40 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    padding-top: 50px;
+    gap: 1.5rem;
+    padding-top: 5.0rem;
 }
 
 .cabecalho .titulo {
-    color: #f1ecff;
+    color: #fff;
+    letter-spacing: 0.2rem;
 }
 
 .cabecalho .logoDaTurminha{
-    width: 25px;
-    height: 25px;
+    width: 5.5rem;
+    height: 5.5rem;
 }
 
-.pokemon-slider{
+.personagem-slider{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    margin: 60px 0;
+    gap: 8.0rem;
+    margin: 4.0rem 0;
 }
 
-.lista-pokemons{    
-    width: 310px;
-    height: 520px;
+.lista-personagens{    
+    width: 31.0rem;
+    height: 52.0rem;
 
     position: relative;
 }
 
 .btn-seta{
-    background-color: #fff;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    background-color: #f1ecff;
+    width: 7.0rem;
+    height: 7.0rem;
+    border-radius: 5.0rem;
     border: 0;
     cursor: pointer;
     
@@ -73,9 +79,9 @@ body{
 
     position: absolute;
 
-    padding: 12px;
+    padding: 1.2rem;
 
-    border-radius: 10px;
+    border-radius: 1.0rem;
 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -141,53 +147,56 @@ body{
     background-color:rgba(179, 177, 185, 0.7);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
     
-    padding: 8px 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding: 0.8rem 1.0rem;
+    border-top-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
 }
 
 .cartao .informacoes .nome{
-    color: #f1ecff;
-    font-size: 22px;
+    color: #3F51B5;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
 }
 
-.cartao .informacoes .vida{
-    background-color: #333;
+.cartao .informacoes {
+    background-color: rgb(255 255 255 / 70%);
     color: #f1ecff;
-    padding: 6px 10px;
-    border-radius: 20px;
+    padding: 0.6rem 1.0rem;
+    border-radius: 2.0rem;
 }
 
 .container-imagem{
     text-align: center;
 }
 
-.cartao .imagem-pokemon{
+.cartao .imagem-personagem{
     max-width: 100%;
-    max-height: 280px;
-    padding: 20px;
+    max-height: 28.0rem;
+    padding: 2.0rem;
 }
 
 .cartao .descricao{
     background-color: rgba(255, 255, 255, 0.8);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 1.0rem;
+    border-bottom-right-radius: 1.0rem;
 }
 
 .cartao .descricao .titulo{
-    background-color: #333;
+    background-color: #3F51B5;
     color: #f1ecff; 
-    font-size: 15px;
-    padding: 12px;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    letter-spacing: 0.2rem;
 }
 
 .cartao .descricao .texto {
-    font-size: 14px;
-    padding: 12px;
+    font-size: 1.4rem;
+    padding: 1.2rem;
 
     text-align: left;
-    max-height: 115px;
+    max-height: 11.5rem;
     overflow-y: auto;
 }
