@@ -19,7 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    padding-top: 5.0rem;
+    padding-top: 3.0rem;
 }
 
 .cabecalho .titulo {
@@ -43,7 +43,6 @@ body{
 .lista-personagens{    
     width: 31.0rem;
     height: 52.0rem;
-
     position: relative;
 }
 
@@ -70,7 +69,6 @@ body{
 
 .cartao{
     opacity: 0;
-    background-color: blueviolet;
     height: 100%;
 
     display: flex;
@@ -199,4 +197,60 @@ body{
     text-align: left;
     max-height: 11.5rem;
     overflow-y: auto;
+}
+ 
+
+/*======================= RESPONSIVO ============================*/
+@media (max-width: 767px) {
+    
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding-top: 2.0rem;
+    }
+        
+    .cabecalho .titulo {
+        font-size: 1.7rem; 
+    }
+        
+    .cabecalho .logoDaTurminha{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+        
+    .personagem-slider{
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+    }
+        
+    .btn-seta{
+        width: 4.0rem;
+        height: 4.0rem;
+    }
+        
+    .lista-personagens{    
+        width: 20rem;
+        height: 38rem;
+    }
+        
+    .cartao .informacoes .nome{
+        font-size: 1.7rem;
+    }
+        
+    .cartao .informacoes {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .cartao .descricao .titulo{
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+        
+    .cartao .descricao .texto {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
 }
